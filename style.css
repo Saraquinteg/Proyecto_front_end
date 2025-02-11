@@ -15,6 +15,7 @@ body {
     background-color: #fff4e3;
 }
 
+/* Estilos del menú */
 .menu {
     display: flex;
     justify-content: space-between;
@@ -37,6 +38,7 @@ body {
     gap: 20px;
 }
 
+/* Estilos generales para botones */
 button {
     background: none;
     border: none;
@@ -46,6 +48,19 @@ button {
     font-family: 'Caramel-Regular', sans-serif;
 }
 
+.account-btn {
+    background: none;
+    border: none;
+    color: #fff4e3; /* Color inicial del texto */
+    font-size: 40px;
+    cursor: pointer;
+    font-family: 'Caramel-Regular', sans-serif;
+    transition: color 0.3s ease; /* Transición suave solo para el color del texto */
+}
+
+.account-btn:hover {
+    color: #0d0d55; /* Color del texto cuando el cursor esté encima */
+}
 /* Estilos para el dropdown */
 .dropdown {
     position: relative;
@@ -79,6 +94,7 @@ button {
     display: block;
 }
 
+/* Estilos del carrito */
 .cart-btn {
     background: none;
     border: none;
@@ -90,6 +106,7 @@ button {
     height: 80px;
 }
 
+/* Estilos del título */
 .hero-title {
     text-align: center;
     font-size: 3rem;
