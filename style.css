@@ -48,7 +48,8 @@ button {
     font-family: 'Caramel-Regular', sans-serif;
 }
 
-.account-btn {
+/* Efecto de cambio de color en "Cuenta" y "Cajas" */
+.account-btn, .box-btn {
     background: none;
     border: none;
     color: #fff4e3; /* Color inicial del texto */
@@ -58,9 +59,10 @@ button {
     transition: color 0.3s ease; /* Transición suave solo para el color del texto */
 }
 
-.account-btn:hover {
+.account-btn:hover, .box-btn:hover {
     color: #0d0d55; /* Color del texto cuando el cursor esté encima */
 }
+
 /* Estilos para el dropdown */
 .dropdown {
     position: relative;
@@ -108,9 +110,10 @@ button {
 
 /* Estilos del título */
 .hero-title {
-    text-align: center;
-    font-size: 3rem;
+    text-align: left;
+    font-size: 2rem;
     font-weight: bold;
     color: #3f5efb; /* Un azul llamativo */
-    margin-top: 50px; /* Espaciado desde el menú */
+    margin-top: 50px;
+    margin-left: 20px; /* Espaciado desde el menú */
 }
