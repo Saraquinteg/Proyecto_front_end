@@ -1,17 +1,72 @@
 @font-face {
-    font-family: 'Neue Montreal';
-    src: url('NeueMontreal-Regular.woff2') format('woff2');
+    font-family: 'PPEditorialNew';
+    src: url('PPEditorialNew-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Helvetica Neue';
-    src: url('HelveticaNeue-Bold.woff2') format('woff2');
-    font-weight: bold;
-    font-style: normal;
+    font-family: 'HelveticaNeue-9';
+    src: url('HelveticaNeue-9.woff2') format('woff2');
 }
 
+@font-face {
+    font-family: 'HelveticaNeue-4';
+    src: url('HelveticaNeue-4.woff2') format('woff2');
+}
+
+.title {
+    font-family: 'PPEditorialNew', serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    color: black;
+    text-align: left;
+    max-width: 400px;
+    line-height: 1.1; /* Más estrecho */
+    margin-left: 5%;
+    margin-top: 50px;
+    position: relative;
+    z-index: 2;
+}
+
+.subtitle {
+    font-family: 'Neue Montreal', sans-serif;
+    font-size: 1rem;
+    color: black;
+    max-width: 400px;
+    line-height: 1.4;
+    margin-left: 5%;
+    margin-top: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+.simple {
+    font-family: 'HelveticaNeue-9', sans-serif;
+}
+
+.cta-button {
+    font-family: 'HelveticaNeue-4', sans-serif;
+    background-color: #d6dd78;
+    color: #1b243f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-left: 5%;
+    margin-top: 20px;
+    display: inline-block;
+    text-decoration: none;
+    position: relative;
+    z-index: 2;
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    z-index: 2;
+}
 body {
     margin: 0;
     font-family: 'Neue Montreal', sans-serif;
@@ -25,17 +80,16 @@ body {
     font-weight: bold;
     width: 100%;
 }
-
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
 }
-
 .logo {
     width: 150px;
     height: auto;
+    margin-left: 5%;
 }
 
 .menu ul {
