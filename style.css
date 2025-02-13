@@ -1,148 +1,171 @@
 @font-face {
     font-family: 'PPEditorialNew';
-    src: url('PPEditorialNew-Regular.woff2') format('woff2');
-    font-weight: normal;
-    font-style: normal;
+    src: url('Tipografias/PPEditorialNew-Regular.woff2') format('woff2');
 }
-
 @font-face {
     font-family: 'HelveticaNeue-9';
-    src: url('HelveticaNeue-9.woff2') format('woff2');
+    src: url('Tipografias/HelveticaNeue-9.woff2') format('woff2');
 }
-
 @font-face {
     font-family: 'HelveticaNeue-4';
-    src: url('HelveticaNeue-4.woff2') format('woff2');
+    src: url('Tipografias/HelveticaNeue-4.woff2') format('woff2');
 }
-
+/*  PAGINA PRINCIPAL */
 body {
     margin: 0;
     font-family: 'Neue Montreal', sans-serif;
 }
-
-/* Aviso de Envío Gratis */
+/*  BARRA DE ENVÍO GRATIS  */
 #envio-gratis {
-    background-color: #1b243f;
-    color: #d6dd78;
-    text-align: center;
-    padding: 10px 0;
-    font-weight: bold;
-    width: 100%;
+    background-color: #1b243f; 
+    color: #d6dd78; 
+    text-align: center; 
+    padding: 10px 0; /* Espaciado superior e inferior */
+    font-weight: bold; 
+    width: 100%; /* ancho */
 }
-
-/* Menú de navegación */
+/*  MENÚ DE NAVEGACIÓN  */
 #menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* Usa Flexbox, se mueve depende el espacio que tiene */
+    justify-content: space-between; /* Separa el logo y la lista de navegación */
+    align-items: center; /* Alinea los elementos verticalmente */
     padding: 10px;
-    border-bottom: 2px solid white;
     margin-right: 2%;
 }
-
 #logo {
-    width: 150px;
-    height: auto;
-    margin-left: 5%;
+    width: 150px; 
+    height: auto; /* Mantiene la proporción */
+    margin-left: 5%; /* Separa el logo del borde izquierdo */
 }
-
 #menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
+    list-style: none; /* Elimina los puntos de la lista */
+    display: flex; 
+    gap: 20px; /* Espaciado entre elementos */
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
-   
 }
-
 #menu ul li a {
-    text-decoration: none;
-    color: #1b243f;
+    text-decoration: none; 
+    color: #1b243f; 
 }
-
-/* Fondo con video */
-
-
+#menu ul li a:hover {
+    color: #d6dd78; 
+    transition: color 0.3s ease-in-out;
+}
+/*  FONDO CON VIDEO  */
 #fondo video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Hace que el video llene el espacio sin deformarse */
+    overflow: hidden; /* Evita que el video se salga del contenedor */
 }
-
-/* Contenido sobre el video */
+/*  CONTENIDO SOBRE EL VIDEO  */
 #hero {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    color: #1b243f;
-    z-index: 2;
+    position: absolute; /* Lo coloca sobre el video */
+    bottom: 5%; 
+    left: 5%; 
+    color: #1b243f; 
+    z-index: 2; /* Asegura que esté sobre el video */
 }
-
+/*  TITULOS Y SUBTITULOS  */
 #title {
     font-family: 'PPEditorialNew', serif;
-    font-size: 2.5rem;
+    font-size: 2.5rem; 
     font-weight: normal;
-    text-align: left;
-    max-width: 400px;
-    line-height: 1.1;
-    margin-bottom: 30px;
+    max-width: 400px; 
+    line-height: 1.1; 
+    margin-bottom: 30px; 
+    text-align: left; 
 }
-
 #subtitle {
     font-family: 'Neue Montreal', sans-serif;
     font-size: 1rem;
     max-width: 400px;
-    line-height: 1.4;
+    line-height: 1.4; 
     margin-bottom: 30px;
 }
-
-.simple {
-    font-family: 'HelveticaNeue-9', sans-serif;
-}
-
 #cta-button {
     font-family: 'HelveticaNeue-4', sans-serif;
-    background-color: #d6dd78;
-    color: #1b243f;
+    background-color: #d6dd78; 
+    color: #1b243f; 
     padding: 10px 20px;
-    border: none;
-    cursor: pointer;
+    border: none; 
+    cursor: pointer; 
     font-size: 1rem;
     display: inline-block;
     text-decoration: none;
     margin-bottom: 80px;
 }
-
-/* Sección de marcas */
-#brands-section {
-    background-color: #d6dd78;
-    padding: 30px;
+#como-funciona {
+    background-color: #f4f4f4; 
+    padding: 40px 20px;
     text-align: center;
     font-family: 'Neue Montreal', sans-serif;
+}
+#como-funciona h2 {
+    font-size: 2rem;
+    color: #1b243f;
+    margin-bottom: 20px;
+}
+#descripcion-como-funciona {
+    font-size: 1.1rem;
+    max-width: 800px;
+    margin: 0 auto 30px auto;
+    line-height: 1.6;
     color: #2e415a;
+}
+.pasos {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+}
+.paso {
+    background-color: #d6dd78; 
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    min-width: 200px;
+    text-align: center;
+}
+.paso h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b243f;
+    margin-bottom: 10px;
+}
+.paso p {
+    font-size: 1rem;
+    color: #2e415a;
+}
+/* SECCIÓN DE MARCAS */
+#brands-section {
+    background-color: #d6dd78; 
+    padding: 30px;
+    text-align: center; 
+    font-family: 'Neue Montreal', sans-serif;
+    color: #2e415a; 
     font-size: 20px;
     margin-top: -10px;
     position: relative;
 }
-
+/* SLIDER DE MARCAS */
 #brands-slider {
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
+    overflow: hidden; /* Oculta el contenido que se sale */
+    white-space: nowrap; /* Asegura que las imágenes se mantengan en una línea */
     width: 100%;
 }
-
+/* Contenedor de imágenes que se mueven */
 #brands-track {
     display: flex;
-    animation: scroll 20s linear infinite;
-    gap: 20px;
+    animation: scroll 20s linear infinite; 
+    gap: 20px; /* Espaciado entre imágenes */
 }
-
+/* Tamaño de las imágenes dentro del slider */
 #brands-track img {
     height: 50px;
     width: auto;
 }
-
+/* Animación del slider */
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -151,44 +174,60 @@ body {
         transform: translateX(-50%);
     }
 }
-
-/* Estilos específicos para cuenta.html */
+/* PAGINA cuenta.html */
 #login-container {
     position: absolute;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    transform: translateY(-50%);
     max-width: 400px;
     background: rgba(198, 196, 196, 0.7);
-    padding: 30px;
+    padding: 50px;
     border-radius: 10px;
+    margin-left: 450px;
 }
-
+#title2 {
+    font-family: 'PPEditorialNew', serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    max-width: 400px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+    text-align: center;
+}
+#subtitle2 {
+    font-family: 'Neue Montreal', sans-serif;
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    text-align: center;
+}
 #login-container input {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     border: 1px solid #ccc;
-    border-radius: 5px;
     margin-bottom: 15px;
     text-align: center;
 }
-
 #login-container button {
     font-family: 'HelveticaNeue-4', sans-serif;
     background-color: #d6dd78;
     color: #1b243f;
-    padding: 10px 20px;
+    padding: 10px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
     display: block;
     width: 100%;
     text-align: center;
-    border-radius: 5px;
+    margin-bottom: 15px;
 }
-#fondo2{
+/* Bloque verde en la parte inferior de cuenta.html */
+#footer-block {
+    background-color: #d6dd78;
+    height: 20px;
     width: 100%;
-    height: 100%;
-    object-fit: cover;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
