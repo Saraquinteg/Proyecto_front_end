@@ -15,64 +15,13 @@
     src: url('HelveticaNeue-4.woff2') format('woff2');
 }
 
-.title {
-    font-family: 'PPEditorialNew', serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    color: black;
-    text-align: left;
-    max-width: 400px;
-    line-height: 1.1; /* Más estrecho */
-    margin-left: 5%;
-    margin-top: 50px;
-    position: relative;
-    z-index: 2;
-}
-
-.subtitle {
-    font-family: 'Neue Montreal', sans-serif;
-    font-size: 1rem;
-    color: black;
-    max-width: 400px;
-    line-height: 1.4;
-    margin-left: 5%;
-    margin-top: 10px;
-    position: relative;
-    z-index: 2;
-}
-
-.simple {
-    font-family: 'HelveticaNeue-9', sans-serif;
-}
-
-.cta-button {
-    font-family: 'HelveticaNeue-4', sans-serif;
-    background-color: #d6dd78;
-    color: #1b243f;
-    padding: 10px 20px;
-    border: none;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 5%;
-    margin-top: 20px;
-    display: inline-block;
-    text-decoration: none;
-    position: relative;
-    z-index: 2;
-}
-
-.hero {
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    z-index: 2;
-}
 body {
     margin: 0;
     font-family: 'Neue Montreal', sans-serif;
 }
 
-.envio-gratis {
+/* Aviso de Envío Gratis */
+#envio-gratis {
     background-color: #1b243f;
     color: #d6dd78;
     text-align: center;
@@ -80,37 +29,166 @@ body {
     font-weight: bold;
     width: 100%;
 }
-.menu {
+
+/* Menú de navegación */
+#menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 10px;
+    border-bottom: 2px solid white;
+    margin-right: 2%;
 }
-.logo {
+
+#logo {
     width: 150px;
     height: auto;
     margin-left: 5%;
 }
 
-.menu ul {
+#menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
+   
 }
 
-.menu ul li a {
+#menu ul li a {
     text-decoration: none;
     color: #1b243f;
 }
 
-.background-video {
-    position: absolute;
-    top: 0;
-    left: 0;
+/* Fondo con video */
+
+
+#fondo video {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     object-fit: cover;
-    z-index: -1;
+}
+
+/* Contenido sobre el video */
+#hero {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: #1b243f;
+    z-index: 2;
+}
+
+#title {
+    font-family: 'PPEditorialNew', serif;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-align: left;
+    max-width: 400px;
+    line-height: 1.1;
+    margin-bottom: 30px;
+}
+
+#subtitle {
+    font-family: 'Neue Montreal', sans-serif;
+    font-size: 1rem;
+    max-width: 400px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+}
+
+.simple {
+    font-family: 'HelveticaNeue-9', sans-serif;
+}
+
+#cta-button {
+    font-family: 'HelveticaNeue-4', sans-serif;
+    background-color: #d6dd78;
+    color: #1b243f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    margin-bottom: 80px;
+}
+
+/* Sección de marcas */
+#brands-section {
+    background-color: #d6dd78;
+    padding: 30px;
+    text-align: center;
+    font-family: 'Neue Montreal', sans-serif;
+    color: #2e415a;
+    font-size: 20px;
+    margin-top: -10px;
+    position: relative;
+}
+
+#brands-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+}
+
+#brands-track {
+    display: flex;
+    animation: scroll 20s linear infinite;
+    gap: 20px;
+}
+
+#brands-track img {
+    height: 50px;
+    width: auto;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-50%);
+    }
+}
+
+/* Estilos específicos para cuenta.html */
+#login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    max-width: 400px;
+    background: rgba(198, 196, 196, 0.7);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+#login-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+#login-container button {
+    font-family: 'HelveticaNeue-4', sans-serif;
+    background-color: #d6dd78;
+    color: #1b243f;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    border-radius: 5px;
+}
+#fondo2{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }

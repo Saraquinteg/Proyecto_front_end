@@ -8,11 +8,11 @@
 </head>
 <body>
     <!-- Aviso de Envío Gratis -->
-    <div class="envio-gratis">EL ENVÍO SIEMPRE ES GRATUITO</div>
+    <div id="envio-gratis">EL ENVÍO SIEMPRE ES GRATUITO</div>
     
     <!-- Menú de navegación -->
-    <header class="menu">
-        <img src="Logoficial.png" alt="Logo Cubox" class="logo">
+    <header id="menu">
+        <img src="Logoficial.png" alt="Logo Cubox" id="logo">
         <nav>
             <ul>
                 <li><a href="#">COMPRA</a></li>
@@ -21,18 +21,44 @@
             </ul>
         </nav>
     </header>
-    
-    <!-- Fondo con video -->
-    <div class="fondo">
+
+    <!-- Sección de video -->
+    <section id="fondo">
         <video autoplay loop muted>
             <source src="cuboxvideo2.mp4" type="video/mp4">
         </video>
-    </div>
-    <section class="hero">
-        <h1 class="title">La nueva forma de <br> comprar colombiano</h1>
-        <p class="subtitle">Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
-            Selecciona tu caja sorpresa y recibe en tu hogar. <span class="simple">Simple.</span></p>
-        <a href="#" class="cta-button">DESCUBRE NUESTRAS CAJAS</a>
+    </section>
+
+    <!-- Sección Principal -->
+    <section id="hero">
+        <h1 id="title">La nueva forma de <br> comprar colombiano</h1>
+        <p id="subtitle">Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
+            Selecciona tu caja sorpresa y recibe en tu hogar. <span id="simple">Simple.</span></p>
+        <a href="#" id="cta-button">DESCUBRE NUESTRAS CAJAS</a>
+    </section>
+
+    <!-- Sección de marcas -->
+    <section id="brands-section">
+        <h2>Marcas que encontrarás en Cubox®</h2>
+        <div id="brands-slider">
+            <div id="brands-track">
+                <img src="undergold.png" alt="Undergold">
+                <img src="tennis.png" alt="Tennis">
+                <img src="mercedes.png" alt="Mercedes">
+                <img src="toy.png" alt="Toy">
+                <img src="termox.png" alt="Termox">
+                <img src="true.png" alt="True">
+                <img src="arkad.png" alt="Arkad">
+                <!-- Duplicación para efecto infinito -->
+                <img src="undergold.png" alt="Undergold">
+                <img src="tennis.png" alt="Tennis">
+                <img src="mercedes.png" alt="Mercedes">
+                <img src="toy.png" alt="Toy">
+                <img src="termox.png" alt="Termox">
+                <img src="true.png" alt="True">
+                <img src="arkad.png" alt="Arkad">
+            </div>
+        </div>
     </section>
 </body>
 </html>
