@@ -10,32 +10,64 @@
     font-family: 'HelveticaNeue-4';
     src: url('Tipografias/HelveticaNeue-4.woff2') format('woff2');
 }
-/*  PAGINA PRINCIPAL */
+
 body {
     margin: 0;
     font-family: 'Neue Montreal', sans-serif;
 }
-/*  BARRA DE ENVÍO GRATIS  */
+
 #envio-gratis {
-    background-color: #1b243f; 
-    color: #d6dd78; 
-    text-align: center; 
-    padding: 10px 0; /* Espaciado superior e inferior */
-    font-weight: bold; 
-    width: 100%; /* ancho */
+    background-color: #d4dd67;
+    color: #202d5b;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: medium;
+    font-size: 13px;
+    width: 100%;
 }
-/*  MENÚ DE NAVEGACIÓN  */
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    color: #ffffff; 
+    z-index: 5; 
+    text-align: center; 
+}
+
+#hero {
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    color: #202d5b;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 90%;
+}
+
 #menu {
-    display: flex; /* Usa Flexbox, se mueve depende el espacio que tiene */
-    justify-content: space-between; /* Separa el logo y la lista de navegación */
-    align-items: center; /* Alinea los elementos verticalmente */
-    padding: 10px;
-    margin-right: 2%;
+    position: absolute;  /* Change to fixed to keep it at the top */
+    top: 0;          /* Align to the top */
+    width: 100%;     /* Full width */
+    display: flex; 
+    justify-content: space-between; 
+    padding: 10px;   /* Adjust padding as necessary */
+    z-index: 10;     /* Make sure it stays above the video */
 }
 #logo {
-    width: 150px; 
-    height: auto; /* Mantiene la proporción */
-    margin-left: 5%; /* Separa el logo del borde izquierdo */
+    width: 200px; 
+    height: top; /* Mantiene la proporción */
+    margin-left: 45%; /* Separa el logo del borde izquierdo */
+    margin-top: 35%;
+    position: static;
 }
 #menu ul {
     list-style: none; /* Elimina los puntos de la lista */
@@ -43,6 +75,8 @@ body {
     gap: 20px; /* Espaciado entre elementos */
     font-family: 'Helvetica Neue', sans-serif;
     font-weight: bold;
+    margin-left: -20%; /* Separa el logo del borde izquierdo */
+    margin-top: 27%;
 }
 #menu ul li a {
     text-decoration: none; 
@@ -51,23 +85,13 @@ body {
 #menu ul li a:hover {
     color: #d6dd78; 
     transition: color 0.3s ease-in-out;
-}
-/*  FONDO CON VIDEO  */
-#fondo video {
+}    
+#fondo2 video { 
     width: 100%; 
     height: 100%; 
-    object-fit: cover; /* Hace que el video llene el espacio sin deformarse */
-    overflow: hidden; /* Evita que el video se salga del contenedor */
+    object-fit: cover; 
+    overflow: hidden; 
 }
-/*  CONTENIDO SOBRE EL VIDEO  */
-#hero {
-    position: absolute; /* Lo coloca sobre el video */
-    bottom: 5%; 
-    left: 5%; 
-    color: #1b243f; 
-    z-index: 2; /* Asegura que esté sobre el video */
-}
-/*  TITULOS Y SUBTITULOS  */
 #title {
     font-family: 'PPEditorialNew', serif;
     font-size: 2.5rem; 
@@ -83,6 +107,7 @@ body {
     max-width: 400px;
     line-height: 1.4; 
     margin-bottom: 30px;
+    text-align: left; 
 }
 #cta-button {
     font-family: 'HelveticaNeue-4', sans-serif;
@@ -96,76 +121,99 @@ body {
     text-decoration: none;
     margin-bottom: 80px;
 }
+
+#cta-button:hover {
+    background-color: #c2c96d;
+}
+
+/* Media query para mejorar en pantallas pequeñas */
+@media (max-width: 768px) {
+    #title {
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    #subtitle {
+        text-align: center;
+    }
+
+    #cta-button {
+        display: block;
+        text-align: center;
+        margin: 0 auto;
+    }
+}
+
+/* SECCIÓN CÓMO FUNCIONA */
 #como-funciona {
-    background-color: #f4f4f4; 
+    background-color: #f4f4f4;
     padding: 40px 20px;
     text-align: center;
     font-family: 'Neue Montreal', sans-serif;
 }
+
 #como-funciona h2 {
     font-size: 2rem;
-    color: #1b243f;
+    color: #202d5b;
     margin-bottom: 20px;
 }
-#descripcion-como-funciona {
-    font-size: 1.1rem;
-    max-width: 800px;
-    margin: 0 auto 30px auto;
-    line-height: 1.6;
-    color: #2e415a;
-}
+
 .pasos {
     display: flex;
     justify-content: space-around;
     gap: 20px;
 }
 .paso {
-    background-color: #d6dd78; 
+    background-color: #d4dd67;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
     min-width: 200px;
     text-align: center;
+    transition: transform 0.3s ease;
 }
+
+.paso:hover {
+    transform: translateY(-5px);
+}
+
 .paso h3 {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #1b243f;
+    color: #202d5b;
     margin-bottom: 10px;
 }
 .paso p {
     font-size: 1rem;
     color: #2e415a;
 }
+
 /* SECCIÓN DE MARCAS */
 #brands-section {
-    background-color: #d6dd78; 
+    background-color: #d4dd67;
     padding: 30px;
-    text-align: center; 
+    text-align: center;
     font-family: 'Neue Montreal', sans-serif;
-    color: #2e415a; 
+    color: #2e415a;
     font-size: 20px;
     margin-top: -10px;
-    position: relative;
 }
+
 /* SLIDER DE MARCAS */
 #brands-slider {
-    overflow: hidden; /* Oculta el contenido que se sale */
-    white-space: nowrap; /* Asegura que las imágenes se mantengan en una línea */
+    overflow: hidden;
+    white-space: nowrap;
     width: 100%;
 }
-/* Contenedor de imágenes que se mueven */
 #brands-track {
     display: flex;
-    animation: scroll 20s linear infinite; 
-    gap: 20px; /* Espaciado entre imágenes */
+    animation: scroll 20s linear infinite;
+    gap: 20px;
 }
-/* Tamaño de las imágenes dentro del slider */
 #brands-track img {
     height: 50px;
     width: auto;
 }
-/* Animación del slider */
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -174,60 +222,92 @@ body {
         transform: translateX(-50%);
     }
 }
-/* PAGINA cuenta.html */
-#login-container {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    max-width: 400px;
-    background: rgba(198, 196, 196, 0.7);
-    padding: 50px;
-    border-radius: 10px;
-    margin-left: 450px;
+
+.productos {
+    text-align: center;
+    padding: 40px;
 }
-#title2 {
-    font-family: 'PPEditorialNew', serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    max-width: 400px;
-    line-height: 1.1;
-    margin-bottom: 30px;
+
+.productos h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.productos-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.producto {
+    border: 1px solid #000;
+    padding: 15px;
+    width: 220px;
     text-align: center;
 }
-#subtitle2 {
-    font-family: 'Neue Montreal', sans-serif;
-    font-size: 1rem;
-    max-width: 400px;
-    line-height: 1.4;
-    margin-bottom: 30px;
-    text-align: center;
+
+.producto img {
+    width: 100%;
+    height: auto;
 }
-#login-container input {
-    width: 95%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    margin-bottom: 15px;
-    text-align: center;
+
+.precio {
+    font-weight: bold;
+    margin: 10px 0;
 }
-#login-container button {
-    font-family: 'HelveticaNeue-4', sans-serif;
-    background-color: #d6dd78;
-    color: #1b243f;
+
+button {
+    background-color: black;
+    color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-size: 1rem;
-    display: block;
     width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
 }
-/* Bloque verde en la parte inferior de cuenta.html */
-#footer-block {
-    background-color: #d6dd78;
-    height: 20px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+
+/* FOOTER */
+#main-footer {
+    background-color: #202d5b;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-section {
+    margin: 20px;
+}
+
+.footer-section h4 {
+    color: #d4dd67;
+    margin-bottom: 10px;
+}
+
+.footer-section p, .footer-section ul {
+    color: #ffffff;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li a {
+    color: #88bbd8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #d4dd67;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9rem;
 }

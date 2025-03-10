@@ -6,34 +6,70 @@
     <title>Iniciar Sesión - CUBOX</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body>  
     <div id="envio-gratis">EL ENVÍO SIEMPRE ES GRATUITO</div>
     <header id="menu">
-        <a href="index.html">
-            <img src="Imagenes/Logoficial.png" alt="Logo Cubox" id="logo">
+        <a href="index.html" tabindex="0">
+            <img src="Imagenes/Logoficial.png" alt="Logotipo de Cubox" id="logo">
         </a>
         <nav>
             <ul>
-                <li><a href="#">COMPRA</a></li>
-                <li><a href="#">CUENTA</a></li>
-                <li><a href="#">CARRITO</a></li>
+                <li><a href="#" tabindex="0">COMPRA</a></li> 
+                <li><a href="cuenta.html" tabindex="0">CUENTA</a></li> 
+                <li><a href="#" tabindex="0">CARRITO</a></li> 
             </ul>
         </nav>
     </header>
     <div id="fondo2">
         <video autoplay loop muted>
-            <source src="Videos/cuboxingreso.mp4" type="video/mp4">
+            <source src="Videos/cuboxvideo2.mp4" type="video/mp4">
         </video>
-    </div> 
-    <!-- Sección de inicio de sesión -->
-    <section id="login-container">
-        <h1 id="title2">Iniciar sesión</h1>
-        <p id="subtitle2">Ingresa tu correo electrónico y te enviaremos un código de acceso</p>
-        <form action="#" method="POST">
-            <input type="email" placeholder="EMAIL" required>
-            <button type="submit" id="cta-button2">Continuar</button>
-        </form>
+    </div>    
+        <section id="hero">
+            <h1 id="title">La nueva forma de <br> comprar colombiano</h1>
+            <p id="subtitle">
+                Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
+                Selecciona tu caja sorpresa y recibe en tu hogar. <span class="simple">Simple</span>
+            </p>
+            <a href="#" id="cta-button" tabindex="0">DESCUBRE NUESTRAS CAJAS</a>
+        </section>
+    <section id="brands-section">
+        <h2>Marcas que encontrarás en Cubox®</h2>
+        <div id="brands-slider">
+            <div id="brands-track">
+                <img src="Imagenes/undergold.png" alt="Marca Undergold">
+                <img src="Imagenes/tennis.png" alt="Marca Tennis">
+                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
+                <img src="Imagenes/toy.png" alt="Marca Toy">
+                <img src="Imagenes/termox.png" alt="Marca Termox">
+                <img src="Imagenes/true.png" alt="Marca True">
+                <img src="Imagenes/arkad.png" alt="Marca Arkad">
+                <img src="Imagenes/undergold.png" alt="Marca Undergold">
+                <img src="Imagenes/tennis.png" alt="Marca Tennis">
+                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
+                <img src="Imagenes/toy.png" alt="Marca Toy">
+                <img src="Imagenes/termox.png" alt="Marca Termox">
+                <img src="Imagenes/true.png" alt="Marca True">
+                <img src="Imagenes/arkad.png" alt="Marca Arkad">
+            </div>
+        </div>
     </section>
-    <div id="footer-block"></div>   
-</body>
+        <section id="como-funciona">
+            <h2>¿Cómo Funcionamos?</h2>
+            <div class="pasos">
+                <div class="paso">
+                    <h3>Paso 1</h3>
+                    <p>Nosotros le compramos a los minoristas y fabricantes tus marcas colombianas favoritas a costo de producción.</p>
+                </div>
+                <div class="paso">
+                    <h3>Paso 2</h3>
+                    <p>Hacemos un curaduría de los productos y los distribuimos equitativamente. Luego, tú eliges tu caja favorita.</p>
+                </div>
+                <div class="paso">
+                    <h3>Paso 3</h3>
+                    <p>Te realizamos el envío de forma gratuita y solo queda que disfrutes de tus nuevos productos.</p>
+                </div>
+            </div>
+        </section>
+    </body>
 </html>
