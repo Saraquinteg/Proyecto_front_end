@@ -10,14 +10,12 @@
     font-family: 'HelveticaNeue-4';
     src: url('Tipografias/HelveticaNeue-4.woff2') format('woff2');
 }
-
 body {
     margin: 0;
     font-family: 'Neue Montreal', sans-serif;
 }
-
 #envio-gratis {
-    background-color: #d4dd67;
+    background-color: #93bad5;
     color: #202d5b;
     text-align: center;
     padding: 15px 0;
@@ -25,7 +23,6 @@ body {
     font-size: 13px;
     width: 100%;
 }
-
 .video-overlay {
     position: absolute;
     top: 0;
@@ -52,40 +49,34 @@ body {
     align-items: flex-start;
     max-width: 90%;
 }
-
 #menu {
-    position: absolute;  /* Change to fixed to keep it at the top */
-    top: 0;          /* Align to the top */
-    width: 100%;     /* Full width */
+    position: absolute; 
+    top: 0;          
+    width: 100%;     
     display: flex; 
     justify-content: space-between; 
-    padding: 10px;   /* Adjust padding as necessary */
-    z-index: 10;     /* Make sure it stays above the video */
+    padding: 10px;   
+    z-index: 10;    
 }
 #logo {
     width: 200px; 
-    height: top; /* Mantiene la proporción */
-    margin-left: 45%; /* Separa el logo del borde izquierdo */
+    height: top; 
+    margin-left: 37%; 
     margin-top: 35%;
     position: static;
 }
-#menu ul {
-    list-style: none; /* Elimina los puntos de la lista */
-    display: flex; 
-    gap: 20px; /* Espaciado entre elementos */
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: bold;
-    margin-left: -20%; /* Separa el logo del borde izquierdo */
-    margin-top: 27%;
+#menu ul { 
+    margin-top: 25%;
+    position: static;
+    display: flex;
+    gap: 60px; 
+    height: auto; 
+
+.cart {
+        width: 5%;        /* Makes the image responsive */
+        height: auto;       /* Maintains aspect ratio */
 }
-#menu ul li a {
-    text-decoration: none; 
-    color: #1b243f; 
 }
-#menu ul li a:hover {
-    color: #d6dd78; 
-    transition: color 0.3s ease-in-out;
-}    
 #fondo2 video { 
     width: 100%; 
     height: 100%; 
@@ -93,12 +84,13 @@ body {
     overflow: hidden; 
 }
 #title {
-    font-family: 'PPEditorialNew', serif;
-    font-size: 2.5rem; 
-    font-weight: normal;
+    font-family: 'PPEditorialNew-UltralightItalic';
+    font-weight: lighter;
+    font-size: 2.7rem; 
+    font-weight: lighter;
     max-width: 400px; 
-    line-height: 1.1; 
-    margin-bottom: 30px; 
+    line-height: 0.9; 
+    margin-bottom: 15px; 
     text-align: left; 
 }
 #subtitle {
@@ -106,14 +98,15 @@ body {
     font-size: 1rem;
     max-width: 400px;
     line-height: 1.4; 
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     text-align: left; 
 }
 #cta-button {
-    font-family: 'HelveticaNeue-4', sans-serif;
+    font-family: 'Neue Montreal', sans-serif;
+    font-weight: bolder;
     background-color: #d6dd78; 
     color: #1b243f; 
-    padding: 10px 20px;
+    padding: 15px 25px;
     border: none; 
     cursor: pointer; 
     font-size: 1rem;
@@ -121,28 +114,10 @@ body {
     text-decoration: none;
     margin-bottom: 80px;
 }
-
 #cta-button:hover {
-    background-color: #c2c96d;
+    background-color: #89bbd7;
 }
 
-/* Media query para mejorar en pantallas pequeñas */
-@media (max-width: 768px) {
-    #title {
-        text-align: center;
-        font-size: 2rem;
-    }
-
-    #subtitle {
-        text-align: center;
-    }
-
-    #cta-button {
-        display: block;
-        text-align: center;
-        margin: 0 auto;
-    }
-}
 
 /* SECCIÓN CÓMO FUNCIONA */
 #como-funciona {
