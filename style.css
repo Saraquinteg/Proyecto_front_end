@@ -1,3 +1,4 @@
+/* TIPOGRAFÍAS */
 @font-face {
     font-family: 'PPEditorialNew';
     src: url('Tipografias/PPEditorialNew-Regular.woff2') format('woff2');
@@ -10,114 +11,88 @@
     font-family: 'HelveticaNeue-4';
     src: url('Tipografias/HelveticaNeue-4.woff2') format('woff2');
 }
+
+/* CONFIGURACIONES GENERALES */
 body {
     margin: 0;
     font-family: 'Neue Montreal', sans-serif;
 }
+
+/* BARRA DE ENVÍO GRATIS */
 #envio-gratis {
     background-color: #93bad5;
     color: #202d5b;
     text-align: center;
-    padding: 15px 0;
-    font-weight: medium;
+    padding: 10px 0;
     font-size: 13px;
     width: 100%;
 }
-.video-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; 
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center; 
-    color: #ffffff; 
-    z-index: 5; 
-    text-align: center; 
-}
 
+/* HERO */
 #hero {
-    position: absolute;
-    bottom: 5%;
-    left: 5%;
-    color: #202d5b;
-    z-index: 2;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px 20px;
+    text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    max-width: 90%;
+    align-items: center;
+    margin: 0 auto;
 }
-#menu {
-    position: absolute; 
-    top: 0;          
-    width: 100%;     
-    display: flex; 
-    justify-content: space-between; 
-    padding: 10px;   
-    z-index: 10;    
-}
-#logo {
-    width: 200px; 
-    height: top; 
-    margin-left: 37%; 
-    margin-top: 35%;
-    position: static;
-}
-#menu ul { 
-    margin-top: 25%;
-    position: static;
-    display: flex;
-    gap: 60px; 
-    height: auto; 
 
-.cart {
-        width: 5%;        /* Makes the image responsive */
-        height: auto;       /* Maintains aspect ratio */
-}
-}
-#fondo2 video { 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    overflow: hidden; 
-}
 #title {
     font-family: 'PPEditorialNew-UltralightItalic';
-    font-weight: lighter;
-    font-size: 2.7rem; 
-    font-weight: lighter;
-    max-width: 400px; 
-    line-height: 0.9; 
-    margin-bottom: 15px; 
-    text-align: left; 
+    font-size: 2.2rem;
+    line-height: 1.1;
+    margin-bottom: 10px;
 }
+
 #subtitle {
     font-family: 'Neue Montreal', sans-serif;
     font-size: 1rem;
-    max-width: 400px;
-    line-height: 1.4; 
-    margin-bottom: 40px;
-    text-align: left; 
+    line-height: 1.3;
+    max-width: 450px;
+    margin-bottom: 15px;
 }
+
 #cta-button {
     font-family: 'Neue Montreal', sans-serif;
-    font-weight: bolder;
-    background-color: #d6dd78; 
-    color: #1b243f; 
-    padding: 15px 25px;
-    border: none; 
-    cursor: pointer; 
-    font-size: 1rem;
-    display: inline-block;
+    font-weight: bold;
+    background-color: #d6dd78;
+    color: #1b243f;
+    padding: 12px 18px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
     text-decoration: none;
-    margin-bottom: 80px;
+    transition: background-color 0.3s ease;
 }
+
 #cta-button:hover {
     background-color: #89bbd7;
 }
 
+/* RESPONSIVE HERO */
+@media (max-width: 768px) {
+    #hero {
+        padding: 30px 15px;
+    }
+
+    #title {
+        font-size: 1.8rem;
+    }
+
+    #subtitle {
+        font-size: 0.9rem;
+        line-height: 1.2;
+        max-width: 90%;
+    }
+
+    #cta-button {
+        font-size: 0.85rem;
+        padding: 10px 15px;
+    }
+}
 
 /* SECCIÓN CÓMO FUNCIONA */
 #como-funciona {
@@ -133,17 +108,21 @@ body {
     margin-bottom: 20px;
 }
 
+/* CONTENEDOR FLEXIBLE */
 .pasos {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     gap: 20px;
+    flex-wrap: wrap;
 }
+
+/* CAJAS DE PASOS */
 .paso {
     background-color: #d4dd67;
     padding: 20px;
     border-radius: 10px;
     width: 30%;
-    min-width: 200px;
+    min-width: 220px;
     text-align: center;
     transition: transform 0.3s ease;
 }
@@ -153,17 +132,41 @@ body {
 }
 
 .paso h3 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: bold;
     color: #202d5b;
     margin-bottom: 10px;
 }
+
 .paso p {
     font-size: 1rem;
     color: #2e415a;
 }
 
-/* SECCIÓN DE MARCAS */
+/* RESPONSIVE: PASOS */
+@media (max-width: 768px) {
+    .pasos {
+        flex-direction: column;
+    }
+
+    .paso {
+        width: 90%;
+    }
+
+    #como-funciona h2 {
+        font-size: 1.8rem;
+    }
+
+    .paso h3 {
+        font-size: 1.3rem;
+    }
+
+    .paso p {
+        font-size: 0.95rem;
+    }
+}
+
+/* SECCIÓN MARCAS */
 #brands-section {
     background-color: #d4dd67;
     padding: 30px;
@@ -174,21 +177,24 @@ body {
     margin-top: -10px;
 }
 
-/* SLIDER DE MARCAS */
+/* SLIDER MARCAS */
 #brands-slider {
     overflow: hidden;
     white-space: nowrap;
     width: 100%;
 }
+
 #brands-track {
     display: flex;
     animation: scroll 20s linear infinite;
     gap: 20px;
 }
+
 #brands-track img {
     height: 50px;
     width: auto;
 }
+
 @keyframes scroll {
     from {
         transform: translateX(0);
@@ -198,6 +204,7 @@ body {
     }
 }
 
+/* SECCIÓN PRODUCTOS */
 .productos {
     text-align: center;
     padding: 40px;
@@ -210,6 +217,7 @@ body {
 
 .productos-grid {
     display: flex;
+    flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
 }

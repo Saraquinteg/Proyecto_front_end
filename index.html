@@ -5,38 +5,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - CUBOX</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 <body>   
-        <div id="envio-gratis">EL ENVÍO SIEMPRE ES GRATUITO</div>
-        
-        <div id="fondo2">
-            <video autoplay loop muted>
-                <source src="Videos/cuboxvideo2.mp4" type="video/mp4">
-            </video>
-            <div class="video-overlay">
-                <header id="menu">
-                    <a href="index.html">
-                        <img src="Imagenes/Logoficial.png" alt="Logo Cubox" id="logo">
-                    </a>
-                    <nav>
-                        <ul>
-                            <img src="Imagenes/profile.png" alt="profile" id="profile">
-                            <img src="Imagenes/lupa.png" alt="lupa" id="lupa">
-                            <img src="Imagenes/cart.png" alt="cart" id="cart">
-                        </ul>
-                    </nav>
-                </header>
+    <!-- Bootstrap Bundle con Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+       <div class=" text-center text-dark py-2">
+    <strong>EL ENVÍO SIEMPRE ES GRATUITO</strong>
+</div>
+
+<div class="position-relative">
+    <video autoplay loop muted class="w-100 d-block" style="object-fit: cover; height: 100vh;">
+        <source src="Videos/cuboxvideo2.mp4" type="video/mp4">
+    </video>
+
+    <!-- HEADER SOBRE EL VIDEO -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100">
+        <div class="container d-flex justify-content-between align-items-center">
+            <!-- Logo a la izquierda -->
+            <a class="navbar-brand" href="index.html">
+                <img src="Imagenes/Logoficial.png" alt="Logo Cubox" width="120">
+            </a>
     
-                <section id="hero">
-                    <h1 id="title">La nueva forma de comprar colombiano</h1>
-                    <p id="subtitle">
-                        Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
-                        Selecciona tu caja sorpresa y recibe en tu hogar. <span class="simple">Simple</span>
-                    </p>
-                    <a href="#" id="cta-button">DESCUBRE NUESTRAS CAJAS</a>
-                </section>
+            <!-- Menú hamburguesa en móviles -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+    
+            <!-- Menú de navegación alineado a la derecha -->
+            <div class="collapse navbar-collapse ms-auto justify-content-end" id="navbarNav">
+                <ul class="navbar-nav d-flex justify-content-end align-items-center w-100 text-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="Imagenes/profile.png" alt="profile" width="30"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="Imagenes/lupa.png" alt="lupa" width="30"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#"><img src="Imagenes/cart.png" alt="cart" width="30"></a>
+                    </li>
+                </ul>
             </div>
         </div>
+    </header>
+    
+    
+    
+</div>
+<section id="hero" class="container text-center d-flex flex-column align-items-center justify-content-center">
+    <h1 id="title">La nueva forma de comprar colombiano</h1>
+    <p id="subtitle">
+        Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
+        Selecciona tu caja sorpresa y recibe en tu hogar. <span class="simple">Simple</span>
+    </p>
+    <a href="#" id="cta-button">DESCUBRE NUESTRAS CAJAS</a>
+</section>
+
 
     <section id="brands-section">
         <h2>Marcas que encontrarás en Cubox®</h2>
@@ -77,6 +105,7 @@
             </div>
         </div>
     </section>
+    
 
     <section class="productos">
         <h2>Tu próxima gran sorpresa comienza aquí, elige tu Cubox</h2>
