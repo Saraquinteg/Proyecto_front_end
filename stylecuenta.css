@@ -1,4 +1,4 @@
-/* ESTILOS GENERALES */
+/* Importar Tipografías */
 @font-face {
     font-family: 'PPEditorialNew';
     src: url('Tipografias/PPEditorialNew-Regular.woff2') format('woff2');
@@ -11,7 +11,15 @@
     font-family: 'HelveticaNeue-4';
     src: url('Tipografias/HelveticaNeue-4.woff2') format('woff2');
 }
-/* BARRA DE ENVÍO GRATIS */
+
+/* Reset General */
+body {
+    margin: 0;
+    font-family: 'HelveticaNeue-9', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Barra de Envío Gratis */
 #envio-gratis {
     background-color: #1b243f;
     color: #d6dd78;
@@ -21,87 +29,119 @@
     width: 100%;
 }
 
-/* MENÚ DE NAVEGACIÓN */
+/* Menú de Navegación */
 #menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    margin-right: 2%;
+    background: white;
 }
 #logo {
     width: 150px;
-    height: auto;
     margin-left: 5%;
 }
-#menu ul {
+.menu-icons {
     list-style: none;
     display: flex;
     gap: 20px;
-    font-family: 'Helvetica Neue', sans-serif;
-    font-weight: bold;
+    padding: 0;
 }
-#menu ul li a {
-    text-decoration: none;
-    color: #1b243f;
+.menu-icons li {
+    list-style: none;
 }
-#menu ul li a:hover {
-    color: #d6dd78;
-    transition: color 0.3s ease-in-out;
+.menu-icons li a img {
+    width: 30px;
+    transition: transform 0.2s ease-in-out;
+}
+.menu-icons li a img:hover {
+    transform: scale(1.1);
 }
 
-body {
-    margin: 0;
-    font-family: 'Neue Montreal', sans-serif;
+/* Fondo con Video */
+#fondo {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    overflow: hidden;
 }
-/* CONTENEDOR LOGIN */
+#fondo video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Contenedor del Login */
 #login-container {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    max-width: 400px;
-    background: rgba(198, 196, 196, 0.7);
-    padding: 50px;
-    border-radius: 10px;
-    margin-left: 450px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    max-width: 350px;
+    width: 90%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
+/* Títulos y Subtítulos */
 #title2 {
     font-family: 'PPEditorialNew', serif;
-    font-size: 2.5rem;
-    font-weight: normal;
-    max-width: 400px;
-    line-height: 1.1;
-    margin-bottom: 30px;
-    text-align: center;
+    font-size: 2rem;
+    color: #1b243f;
+    margin-bottom: 10px;
 }
 #subtitle2 {
-    font-family: 'Neue Montreal', sans-serif;
     font-size: 1rem;
-    max-width: 400px;
-    line-height: 1.4;
-    margin-bottom: 30px;
-    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
 }
+
+/* Campos de Entrada */
 #login-container input {
-    width: 95%;
-    padding: 10px;
+    width: 100%;
+    padding: 12px;
     border: 1px solid #ccc;
+    border-radius: 5px;
     margin-bottom: 15px;
-    text-align: center;
+    font-size: 1rem;
 }
+
+/* Botón de Ingreso */
 #login-container button {
-    font-family: 'HelveticaNeue-4', sans-serif;
     background-color: #d6dd78;
     color: #1b243f;
-    padding: 10px;
+    padding: 12px;
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    display: block;
     width: 100%;
-    text-align: center;
-    margin-bottom: 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease-in-out;
 }
+#login-container button:hover {
+    background-color: #c0c556;
+}
+
+/* Enlace de Recuperar Contraseña */
+#forgot-password {
+    display: block;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #1b243f;
+    text-decoration: none;
+}
+#forgot-password:hover {
+    text-decoration: underline;
+}
+
+/* Footer */
 #footer-block {
     background-color: #d6dd78;
     height: 20px;
@@ -109,4 +149,21 @@ body {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/* Estilos Responsivos */
+@media screen and (max-width: 768px) {
+    #login-container {
+        max-width: 300px;
+        padding: 30px;
+    }
+    #title2 {
+        font-size: 1.8rem;
+    }
+    #subtitle2 {
+        font-size: 0.9rem;
+    }
+    #login-container input, #login-container button {
+        font-size: 0.9rem;
+    }
 }

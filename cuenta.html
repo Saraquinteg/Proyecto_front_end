@@ -3,73 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión - CUBOX</title>
+    <title>Cuenta - CUBOX</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>  
+    <!-- Barra de Envío Gratis -->
     <div id="envio-gratis">EL ENVÍO SIEMPRE ES GRATUITO</div>
+
+    <!-- Menú de Navegación -->
     <header id="menu">
-        <a href="index.html" tabindex="0">
+        <a href="index.html">
             <img src="Imagenes/Logoficial.png" alt="Logotipo de Cubox" id="logo">
         </a>
         <nav>
-            <ul>
-                <li><a href="#" tabindex="0">COMPRA</a></li> 
-                <li><a href="cuenta.html" tabindex="0">CUENTA</a></li> 
-                <li><a href="#" tabindex="0">CARRITO</a></li> 
+            <ul class="menu-icons">
+                <li><a href="#"><img src="Imagenes/icono-compra.png" alt="Compra"></a></li> 
+                <li><a href="cuenta.html"><img src="Imagenes/icono-cuenta.png" alt="Cuenta"></a></li> 
+                <li><a href="#"><img src="Imagenes/icono-carrito.png" alt="Carrito"></a></li> 
             </ul>
         </nav>
     </header>
-    <div id="fondo2">
+
+    <!-- Fondo con Video -->
+    <div id="fondo">
         <video autoplay loop muted>
             <source src="Videos/cuboxvideo2.mp4" type="video/mp4">
+            Tu navegador no soporta videos.
         </video>
-    </div>    
-        <section id="hero">
-            <h1 id="title">La nueva forma de <br> comprar colombiano</h1>
-            <p id="subtitle">
-                Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
-                Selecciona tu caja sorpresa y recibe en tu hogar. Así de simple.
-            </p>
-            <a href="#" id="cta-button" tabindex="0">DESCUBRE NUESTRAS CAJAS</a>
-        </section>
-    <section id="brands-section">
-        <h2>Marcas que encontrarás en Cubox®</h2>
-        <div id="brands-slider">
-            <div id="brands-track">
-                <img src="Imagenes/undergold.png" alt="Marca Undergold">
-                <img src="Imagenes/tennis.png" alt="Marca Tennis">
-                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
-                <img src="Imagenes/toy.png" alt="Marca Toy">
-                <img src="Imagenes/termox.png" alt="Marca Termox">
-                <img src="Imagenes/true.png" alt="Marca True">
-                <img src="Imagenes/arkad.png" alt="Marca Arkad">
-                <img src="Imagenes/undergold.png" alt="Marca Undergold">
-                <img src="Imagenes/tennis.png" alt="Marca Tennis">
-                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
-                <img src="Imagenes/toy.png" alt="Marca Toy">
-                <img src="Imagenes/termox.png" alt="Marca Termox">
-                <img src="Imagenes/true.png" alt="Marca True">
-                <img src="Imagenes/arkad.png" alt="Marca Arkad">
-            </div>
-        </div>
+    </div>  
+
+    <!-- Contenedor del Formulario -->
+    <section id="login-container">
+        <h2 id="title2">Iniciar Sesión</h2>
+        <p id="subtitle2">Accede a tu cuenta para descubrir nuestras cajas sorpresa.</p>
+        <form>
+            <input type="email" placeholder="Correo electrónico" required>
+            <input type="password" placeholder="Contraseña" required>
+            <button type="submit">Ingresar</button>
+            <a href="#" id="forgot-password">¿Olvidaste tu contraseña?</a>
+        </form>
     </section>
-        <section id="como-funciona">
-            <h2>¿Cómo Funcionamos?</h2>
-            <div class="pasos">
-                <div class="paso">
-                    <h3>Paso 1</h3>
-                    <p>Nosotros le compramos a los minoristas y fabricantes tus marcas colombianas favoritas a costo de producción.</p>
-                </div>
-                <div class="paso">
-                    <h3>Paso 2</h3>
-                    <p>Hacemos un curaduría de los productos y los distribuimos equitativamente. Luego, tú eliges tu caja favorita.</p>
-                </div>
-                <div class="paso">
-                    <h3>Paso 3</h3>
-                    <p>Te realizamos el envío de forma gratuita y solo queda que disfrutes de tus nuevos productos.</p>
-                </div>
-            </div>
-        </section>
-    </body>
+
+    <!-- Footer -->
+    <footer id="footer-block"></footer>
+
+</body>
 </html>
