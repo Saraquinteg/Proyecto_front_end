@@ -1,4 +1,4 @@
-/* Importar Tipografías */
+/* ESTILOS GENERALES */
 @font-face {
     font-family: 'PPEditorialNew';
     src: url('Tipografias/PPEditorialNew-Regular.woff2') format('woff2');
@@ -11,15 +11,7 @@
     font-family: 'HelveticaNeue-4';
     src: url('Tipografias/HelveticaNeue-4.woff2') format('woff2');
 }
-
-/* Reset General */
-body {
-    margin: 0;
-    font-family: 'HelveticaNeue-9', sans-serif;
-    background-color: #f4f4f4;
-}
-
-/* Barra de Envío Gratis */
+/* BARRA DE ENVÍO GRATIS */
 #envio-gratis {
     background-color: #1b243f;
     color: #d6dd78;
@@ -29,141 +21,109 @@ body {
     width: 100%;
 }
 
-/* Menú de Navegación */
+/* MENÚ DE NAVEGACIÓN */
 #menu {
+    background-color: #f3eee3;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    background: white;
+    width: 100%;
+    z-index: 10;
+    height: auto;
+    object-fit: cover;
+    overflow: hidden; 
+    max-width: 1440px;
 }
 #logo {
     width: 150px;
+    height: auto;
     margin-left: 5%;
 }
-.menu-icons {
+#menu ul {
     list-style: none;
     display: flex;
     gap: 20px;
-    padding: 0;
+    font-family: 'Helvetica Neue', sans-serif;
+    font-weight: bold;
 }
-.menu-icons li {
-    list-style: none;
+#menu ul li a {
+    text-decoration: none;
+    color: #1b243f;
 }
-.menu-icons li a img {
-    width: 30px;
-    transition: transform 0.2s ease-in-out;
-}
-.menu-icons li a img:hover {
-    transform: scale(1.1);
-}
-
-/* Fondo con Video */
-#fondo {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    overflow: hidden;
-}
-#fondo video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#menu ul li a:hover {
+    color: #d6dd78;
+    transition: color 0.3s ease-in-out;
 }
 
-/* Contenedor del Login */
-#login-container {
+body {
+    margin: 0;
+    font-family: 'Neue Montreal', sans-serif;
+}
+/* CONTENEDOR LOGIN */
+.login-container {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: rgba(255, 255, 255, 0.9);
+    max-width: 400px;
+    background: #f3eee3; /* Color de fondo de la página */
     padding: 40px;
     border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     text-align: center;
-    max-width: 350px;
-    width: 90%;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Títulos y Subtítulos */
-#title2 {
+/* TITULO DEL FORMULARIO */
+.title2 {
     font-family: 'PPEditorialNew', serif;
-    font-size: 2rem;
-    color: #1b243f;
-    margin-bottom: 10px;
-}
-#subtitle2 {
-    font-size: 1rem;
-    color: #666;
+    font-size: 2.2rem;
+    font-weight: normal;
+    color: #1b243f; /* Color del texto */
     margin-bottom: 20px;
 }
 
-/* Campos de Entrada */
+/* SUBTÍTULO DEL FORMULARIO */
+#subtitle2 {
+    font-family: 'HelveticaNeue-9', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 25px;
+}
+
+/* INPUTS */
 #login-container input {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-bottom: 15px;
+    border-radius: 8px;
+    font-family: 'HelveticaNeue-4', sans-serif;
     font-size: 1rem;
+    text-align: left;
+    color: #1b243f;
+    transition: all 0.3s ease-in-out;
 }
 
-/* Botón de Ingreso */
+#login-container input:focus {
+    border-color: #d6dd78;
+    outline: none;
+    box-shadow: 0px 0px 8px rgba(214, 221, 120, 0.5);
+}
+
+/* BOTÓN DE INICIAR SESIÓN */
 #login-container button {
-    background-color: #d6dd78;
-    color: #1b243f;
+    font-family: 'HelveticaNeue-9', sans-serif;
+    background-color: #1b243f;
+    color: #d6dd78;
     padding: 12px;
     border: none;
-    cursor: pointer;
+    border-radius: 8px;
     font-size: 1rem;
     width: 100%;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease-in-out;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
 }
+
 #login-container button:hover {
-    background-color: #c0c556;
+    background-color: #c1c761;
 }
 
-/* Enlace de Recuperar Contraseña */
-#forgot-password {
-    display: block;
-    margin-top: 10px;
-    font-size: 0.9rem;
-    color: #1b243f;
-    text-decoration: none;
-}
-#forgot-password:hover {
-    text-decoration: underline;
-}
-
-/* Footer */
-#footer-block {
-    background-color: #d6dd78;
-    height: 20px;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-}
-
-/* Estilos Responsivos */
-@media screen and (max-width: 768px) {
-    #login-container {
-        max-width: 300px;
-        padding: 30px;
-    }
-    #title2 {
-        font-size: 1.8rem;
-    }
-    #subtitle2 {
-        font-size: 0.9rem;
-    }
-    #login-container input, #login-container button {
-        font-size: 0.9rem;
-    }
-}

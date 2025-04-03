@@ -5,167 +5,208 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iniciar Sesión - CUBOX</title>
     <link rel="stylesheet" href="style.css">
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 </head>
 <body>   
-    <!-- Bootstrap Bundle con Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
-       <div class=" text-center text-dark py-2">
-    <strong>EL ENVÍO SIEMPRE ES GRATUITO</strong>
-</div>
+    <!-- Aviso de envío gratuito -->
+    <div id="envio-gratis">EL ENVÍO SIEMPRE ES GRATUITO</div>
+    <header id="menu" class="container-fluid d-flex justify-content-between align-items-center">
+        <a href="index.html">
+            <img src="Imagenes/Logoficial.png" alt="Logo Cubox" id="logo">
+        </a>
+        <nav>
+            <ul class="d-flex align-items-center gap-4 m-0">
+              <a href="cuenta.html">
+                  <li><img src="Imagenes/profile.png" alt="Perfil" class="icon"></li>
+              </a>
+                <li><img src="Imagenes/lupa.png" alt="Buscar" class="icon"></li>
+                <li><img src="Imagenes/cart.png" alt="Carrito" class="icon"></li>
+            </ul>
+        </nav>
+        
+</header>
+    <!-- Sección de video con overlay -->
+    <div id="fondo2">
+        <video autoplay loop muted>
+            <source src="Videos/cuboxvideo2.mp4" type="video/mp4">
+        </video>
+        
+            
+    <div class="hero-section">
+                <h1 class="hero-title">LA NUEVA FORMA DE COMPRAR COLOMBIANO</h1>
+                <div class="hero-text">
+                  <p> Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
+                    Selecciona tu caja sorpresa y recibe en tu hogar. Así de simple.</p>
+                </div>
+                <div class="hero-buttons">
+                  <button class="hero-button-primary">DESCUBRE NUESTRAS CAJAS</button>
 
-<div class="position-relative">
-    <video autoplay loop muted class="w-100 d-block" style="object-fit: cover; height: 50vh;">
-        <source src="Videos/cuboxvideo2.mp4" type="video/mp4">
-    </video>
-
-    <!-- HEADER SOBRE EL VIDEO -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-transparent position-absolute top-0 start-0 w-100">
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Logo a la izquierda -->
-            <a class="navbar-brand" href="index.html">
-                <img src="Imagenes/Logoficial.png" alt="Logo Cubox" width="120">
-            </a>
-    
-            <!-- Menú hamburguesa en móviles -->
-            <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-    
-            <!-- Menú de navegación alineado a la derecha -->
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav text-end">
-                    <li class="nav-item">
-                        <a class="nav-link" href="cuenta.html">
-                            <img src="Imagenes/profile.png" alt="profile" width="30">
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="Imagenes/lupa.png" alt="lupa" width="30"></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#"><img src="Imagenes/cart.png" alt="cart" width="30"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </header>
-    
-    
-</div>
-<section id="hero" class="container text-center d-flex flex-column align-items-center justify-content-center">
-    <h1 id="title">La nueva forma de comprar colombiano</h1>
-    <p id="subtitle">
-        Cubox® es la nueva alternativa para comprar en tus marcas colombianas favoritas. 
-        Selecciona tu caja sorpresa y recibe en tu hogar. <span class="simple">Simple</span>
-    </p>
-    <a href="#" id="cta-button">DESCUBRE NUESTRAS CAJAS</a>
-</section>
-
+                </div>
+    </div>
+            
 
     <section id="brands-section">
-        <h2>Marcas que encontrarás en Cubox®</h2>
         <div id="brands-slider">
             <div id="brands-track">
-                <img src="Imagenes/undergold.png" alt="Undergold">
-                <img src="Imagenes/tennis.png" alt="Tennis">
-                <img src="Imagenes/mercedes.png" alt="Mercedes">
-                <img src="Imagenes/toy.png" alt="Toy">
-                <img src="Imagenes/termox.png" alt="Termox">
-                <img src="Imagenes/true.png" alt="True">
-                <img src="Imagenes/arkad.png" alt="Arkad">
-                <img src="Imagenes/undergold.png" alt="Undergold">
-                <img src="Imagenes/tennis.png" alt="Tennis">
-                <img src="Imagenes/mercedes.png" alt="Mercedes">
-                <img src="Imagenes/toy.png" alt="Toy">
-                <img src="Imagenes/termox.png" alt="Termox">
-                <img src="Imagenes/true.png" alt="True">
-                <img src="Imagenes/arkad.png" alt="Arkad">
+                <img src="Imagenes/undergold.png" alt="Marca Undergold">
+                <img src="Imagenes/tennis.png" alt="Marca Tennis">
+                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
+                <img src="Imagenes/toy.png" alt="Marca Toy">
+                <img src="Imagenes/termox.png" alt="Marca Termox">
+                <img src="Imagenes/true.png" alt="Marca True">
+                <img src="Imagenes/arkad.png" alt="Marca Arkad">
+                <img src="Imagenes/undergold.png" alt="Marca Undergold">
+                <img src="Imagenes/tennis.png" alt="Marca Tennis">
+                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
+                <img src="Imagenes/toy.png" alt="Marca Toy">
+                <img src="Imagenes/termox.png" alt="Marca Termox">
+                <img src="Imagenes/true.png" alt="Marca True">
+                <img src="Imagenes/arkad.png" alt="Marca Arkad">
+                <img src="Imagenes/undergold.png" alt="Marca Undergold">
+                <img src="Imagenes/tennis.png" alt="Marca Tennis">
+                <img src="Imagenes/mercedes.png" alt="Marca Mercedes">
+                <img src="Imagenes/toy.png" alt="Marca Toy">
+                <img src="Imagenes/termox.png" alt="Marca Termox">
+                <img src="Imagenes/true.png" alt="Marca True">
+                <img src="Imagenes/arkad.png" alt="Marca Arkad">
             </div>
         </div>
     </section>
+    <div class="container" id="custom-cards">  
+    <img src="Imagenes/Logocubo.png" alt="Logo Cubox" id="logocubo">
+    <h1 class="card-title">¿CÓMO FUNCIONAMOS?</h1> 
 
-    <section id="como-funciona">
-        <h2>¿Cómo Funcionamos?</h2>
-        <div class="pasos">
-            <div class="paso">
-                <h3>Paso 1</h3>
-                <p>Nosotros le compramos a los minoristas y fabricantes tus marcas colombianas favoritas a costo de producción.</p>
-            </div>
-            <div class="paso">
-                <h3>Paso 2</h3>
-                <p>Hacemos una curaduría de los productos y los distribuimos equitativamente. Luego, tú eliges tu caja favorita.</p>
-            </div>
-            <div class="paso">
-                <h3>Paso 3</h3>
-                <p>Te realizamos el envío de forma gratuita y solo queda que disfrutes de tus nuevos productos.</p>
+    <div class="row">
+        <div class="col">
+            <div class="card-cover">
+                <div class="card-cover-1">
+                    <h3>Nosotros le compramos a los minoristas y fabricantes tus marcas colombianas favoritas a costo de producción.</h3>
+                    <ul class="icon-list">
+                        <li><img src="Imagenes/verdeicono.png" alt="Bootstrap" class="icon"></li>
+                    
+                    </ul>
+                </div>
             </div>
         </div>
-    </section>
+
+        <div class="col">
+            <div class="card-cover">
+                <div class="card-cover-2">
+                    <h3>Hacemos un curaduría de los productos y los distribuimos equitativamente. Luego, tú eliges tu caja favorita.</h3>
+                    <ul class="icon-list">
+                        <li><img src="Imagenes/azulicono.png" alt="Bootstrap" class="icon"></li>
+                      
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="card-cover">
+                <div class="card-cover-3">
+                    <h3>Te realizamos el envío de forma gratuita y solo queda que disfrutes de tus nuevos productos.</h3>
+                    <ul class="icon-list">
+                        <li><img src="Imagenes/verdeicono.png" alt="Bootstrap" class="icon"></li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<main>
+  <div class="pricing-header" id="productos">
+    <h1 class="title">PRODUCTOS</h1>
+    <p class="description">
+      Tu próxima gran sorpresa comienza aquí, elige tu Cubox
+    </p>
+  </div>
+  
+  <main>
+    <div class="pricing-container">
+      <div class="pricing-card">
+        <div class="card-header">
+          <h4>Cubox Elite</h4>
+        </div>
+        <img src="Imagenes/Elite.jpg" alt="Logo Cubox" id="fotos-container">
+        <div class="card-body">
+          <h1 class="price">$200.000<span>/cop</span></h1>
+          <ul>
+            <li>Nuestra Mystery Box más exclusiva, con productos de alto valor y ediciones limitadas.</li>
+           
+          </ul>
+          <button class="btn-primary">Añadir al carrito</button>
+        </div>
+      </div>
+  
+      <div class="pricing-card">
+        <div class="card-header">
+          <h4>Cubox Premium</h4>
+        </div>
+        <img src="Imagenes/Premium.jpg" alt="Logo Cubox" id="fotos-container">
+        <div class="card-body">
+          <h1 class="price">$150.000<span>/cop</span></h1>
+          <ul>
+            <li>Una Mystery Box de alta gama, con artículos de calidad y sorpresas de gran valor.</li>
+            
+          </ul>
+          <button class="btn-primary">Añadir al carrito</button>
+        </div>
+      </div>
+  
+      <div class="pricing-card">
+        <div class="card-header">
+          <h4>Cubox Core</h4>
+        </div>
+        <img src="Imagenes/Core.jpg" alt="Logo Cubox" id="fotos-container">
+        <div class="card-body">
+          <h1 class="price">$100.000<span>/cop</span></h1>
+          <ul>
+            <li>El equilibrio perfecto entre precio y sorpresas de valor. ¡Descubre artículos increíbles en cada caja!</li>
+            
+          </ul>
+          <button class="btn-primary">Añadir al carrito</button>
+        </div>
+      </div>
+  
+     
+     
+  
+      <div class="pricing-card featured">
+        <div class="card-header">
+          <h4>Cubox Esencial</h4>
+        </div>
+        <img src="Imagenes/Esencial.jpg" alt="Logo Cubox" id="fotos-container">
+        <div class="card-body">
+          <h1 class="price">$50.000<span>/cop</span></h1>
+          <ul>
+            <li>Nuestra Mystery Box más accesible, con sorpresas geniales a un gran precio.</li>
+          </ul>
+          <button class="btn-primary">Añadir al carrito</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <div class="container">
+    <footer class="footer">
+      <ul class="footer-nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#custom-cards">Cómo funciona?</a></li>
+        <li><a href="#productos">Productos</a></li>
     
-
-    <section class="productos">
-        <h2>Tu próxima gran sorpresa comienza aquí, elige tu Cubox</h2>
-        <div class="productos-grid">
-            <div class="producto">
-                <img src="Imagenes/Esencial.jpg" alt="Box Esencial">
-                <p class="precio">$50.000</p>
-                <h3>Cubox Esencial</h3>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto">
-                <img src="Imagenes/Core.jpg" alt="Box Core">
-                <p class="precio">$100.000</p>
-                <h3>Cubox Core</h3>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto">
-                <img src="Imagenes/Premium.jpg" alt="Box Premium">
-                <p class="precio">$150.000</p>
-                <h3>Cubox Premium</h3>
-                <button>Añadir al carrito</button>
-            </div>
-            <div class="producto">
-                <img src="Imagenes/Elite.jpg" alt="Box Elite">
-                <p class="precio">$200.000</p>
-                <h3>Cubox Elite</h3>
-                <button>Añadir al carrito</button>
-            </div>
-        </div>
-    </section>
-
-    <footer id="main-footer">
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Contacto</h4>
-                <p>Dirección: Calle 123, Medellín, Colombia</p>
-                <p>Teléfono: +57 123 456 7890</p>
-                <p>Email: <a href="mailto:info@cubox.com">info@cubox.com</a></p>
-            </div>
-            <div class="footer-section">
-                <h4>Enlaces Útiles</h4>
-                <ul>
-                    <li><a href="#">Preguntas Frecuentes</a></li>
-                    <li><a href="#">Términos y Condiciones</a></li>
-                    <li><a href="#">Política de Privacidad</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Redes Sociales</h4>
-                <ul>
-                    <li><a href="#">Facebook</a></li>
-                    <li><a href="#">Instagram</a></li>
-                    <li><a href="#">Twitter</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2024 Cubox. Todos los derechos reservados.</p>
-        </div>
+        <li><a href="#">About</a></li>
+      </ul>
+      <p class="footer-text">©️ 2024 Company, Inc</p>
     </footer>
+  </div>
+  
+        
+  </body>
+  </html>
+      
 </body>
 </html>
